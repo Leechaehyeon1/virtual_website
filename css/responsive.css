@@ -1,0 +1,277 @@
+@media (max-width: 1024px){
+  /* Blog Section */
+  .post-content {
+    flex-direction: column;
+  }
+  .post-content .shared-post-item {
+    width: 100%;
+  }
+  .shared-post-item .post-item {
+    flex-direction: row;
+  }
+  .shared-post-item .post-desc {
+    padding: 0 20px;
+  }
+  .divider-shared {
+    display: block;
+    margin: 30px 0;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  /* Testimonial Section */
+  .slide {
+    flex-direction: column;
+    padding: 0;
+  }
+  .slide .slide-txt {
+    width: 75%;
+    padding: 15px 10px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 980px){
+  /* About Section */
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+  }
+  .about-content div {
+    padding: 10px;
+  }
+  .desc p {
+    margin-bottom: 11px;
+  }
+  .photo {
+    max-width: 700px;
+    min-width: 280px;
+    /* text-align: center; */
+  }
+  .photo img {
+    width: 100%;
+  }
+
+  /* Ranking Section */
+  .items {
+    flex-direction: column;
+  }
+  .items .item {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+  .items .item .up-image {
+    width: 100%;
+  }
+  .items .item .up-image img {
+    width: 387px;
+  }
+}
+
+@media (max-width: 768px){
+  .inner {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  /* Header */
+  .banner {
+    display: none;
+  }
+  .lnb {
+    width: 100%;
+    text-align: center;
+  }
+  nav {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .gnb {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    padding: 60px 10px 0 0;
+    text-align: right;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.17);
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: .3s;
+  }
+  .gnb.active {
+    right: 0;
+  }
+  .gnb li a {
+    display: block;
+    margin: 0;
+    padding: 10px;
+    font-size: 18px;
+    color: #000;
+  }
+
+  /* Trigger */
+  .trigger {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 30px;
+    height: 16px;
+  }
+  .trigger span {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    transition: .3s;
+  }
+  .trigger span:nth-child(1) {
+    top: 0;
+  }
+  .trigger span:nth-child(2) {
+    top: 50%;
+  }
+  .trigger span:nth-child(3) {
+    top: 100%;
+  }
+
+  .trigger.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .trigger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .trigger.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  
+  /* Intro */
+  .heading {
+    padding-top: 50px;
+  }
+  .heading h1 {
+    font-size: 40px;
+  }
+  .heading p {
+    padding: 0 30px;
+  }
+
+  /* Ranking Section */
+  .items {
+    flex-direction: column;
+  }
+  .items .item {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+  .items .item .up-image {
+    width: 100%;
+  }
+  .items .item .up-image img {
+    width: 100%;
+  }
+
+  /* Testimonial Section */
+  .slider .slider-item {
+    flex-direction: column;
+    padding: 0 3px;
+  }
+  .slider .slider-item .client {
+    flex-direction: column;
+  }
+  .slider .slider-item .client img {
+    margin: 0;
+  }
+  .slider .slider-item .client span {
+    display: block;
+    margin-top: 15px;
+  }
+  .slider .slider-item .slide-txt {
+    padding: 0 7px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    /* word-wrap: break-word; */
+    line-height: 1.2em;
+    height: 3.6em;
+  }
+
+  /* Callaction Section */
+  .callaction {
+    padding: 0 15px;
+  }
+  .callaction-heading h2 {
+    font-size: 36px;
+  }
+  .callaction-heading a {
+    padding: 10px 15px;
+    font-size: 1.1em;
+  }
+
+  /* Blog Section */
+  .blog {
+    padding: 50px 0;
+  }
+  .blog-header {
+    text-align: center;
+  }
+  .blog-header p {
+    font-size: 20px;
+  }
+  .post-content {
+    flex-direction: column;
+  }
+  .post-content .recent-post-item {
+    padding-right: 0;
+  }
+  .post-item {
+    flex-direction: column;
+  }
+  .post-item .post-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .post-item .post-image img {
+    display: block;
+    height: 100%;
+  }
+  .post-item .post-desc {
+    padding: 0;
+  }
+  .post-item .post-desc h3 {
+    margin-top: 10px;
+  }
+  .post-content .shared-post-item {
+    width: 100%;
+  }
+  .shared-post-item .post-item {
+    flex-direction: column;
+  }
+
+  /* Festival Section */
+  .festival-heading {
+    padding: 0 15px;
+  }
+
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+  }
+  .footer-content ul {
+    margin-bottom: 25px;
+  }
+  .footer-content ul:last-child {
+    margin-bottom: 0;
+  }
+}

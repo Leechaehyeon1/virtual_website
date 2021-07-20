@@ -1,762 +1,333 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <title>Jason Travel Service</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no">
-    <meta name="Title" content="Jason Travel Service ">
-    <meta name="Publisher" content="이채현">
-    <meta name="Author-date" content="2021-01-06">
-    <meta name="Author" content="Jason Travel Service">
-    <meta name="Copyright" content="Jason Travel Service">
-    <meta name="Keywords" content="Jason Travel Service, 여행, 관광">
-    <meta name="Description" content="Jason Travel Service 여행사 입니다.">
-    <meta name="Robots" content="index,follow">
-    
-    <!-- 파비콘 -->
-    <link rel="shortcut icon" href="./img/logo2.png">
-    <link rel="apple-touch-icon" href="./img/logo2.png">
-
-    <!-- 오픈 아이콘 -->
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="./css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="./css/common.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/response.css">
-    
-
-    <!-- 오픈소스 -->   
-    <script src="./js/lib/jquery-1.12.4.min.js"></script>    
-    <script src="./js/lib/jquery.touchSwipe.js"></script>
-    <script src="./js/lib/jquery.easing.1.3.js"></script>
-    <script src="./js/lib/prefixfree.min.js"></script>
-
-    <!-- <script src="./js/lib/prefixfree.min.js"></script>
-    ///// 웹 브라우저의 엔진 폴리필 밴더프리픽스//////////
-    크롬, 사파리  -webkit-transition:all 0.3s;
-    파이어폭스       -moz-transition:all 0.3s;
-    익스프롤러        -ms-transition:all 0.3s;
-    오페라             -o-transition:all 0.3s;
-                         transition:all 0.3s;
-    -->    
-
-
-    <!-- 조건 주석문 익스프롤러 하위 IE9 IE8 IE7 폴리필 -->
-    <!-- 스크립트 스타일 -->
-    
-    <!--[if lte IE 9]>
-        <script src="./js/lib/IE9.js"></script>
-    <![endif]-->
-    
-    <!--[if lte IE 8]>
-        <script src="./js/lib/html5shiv.min.js"></script>
-        <script src="./js/lib/jqPIE.js"></script>
-        <script src="./js/lib/PIE.js"></script>
-        <link rel="stylesheet" type="text/css" href="./css/ie8.css">
-    <![endif]-->
-
-    <!--[if lte IE 7]>    
-       <link rel="stylesheet" type="text/css" href="./css/ie7.css">
-    <![endif]-->
-    
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <title>플렉스(Flex) 반응형 웹사이트</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body id="intro">
-<ul id="skip">
-    <li><a href="#header" title="메뉴 바로가기">메뉴 바로가기</a></li>
-    <li><a href="#main"   title="메인 바로가기">메인 바로가기</a></li>
-    <li><a href="#footer" title="하단 바로가기">하단 바로가기</a></li>
-</ul>
-
-<div id="wrap">
-    <header id="header" class="addHeader">    <!-- height:124px; background:fixed; fff; transparent; -->
-        <div class="wrap">  <!-- width:1570px; -->
-            <div class="gap">   <!-- margin:0 20px; -->
-                <div class="container">     <!-- 100% -->
-                    <ul class="clearfixed">
-                        <li>    <!-- tab 키로 가장 먼저 접근, 가운데 배치 -->
-                            <a href="#" class="logo-btn">
-                                <img src="./img/logo_color.png" class="color" alt="">
-                                <img src="./img/logo_white.png" class="white" alt="">
-                            </a>
-                        </li>
-                        <li>    <!-- 왼쪽 배치 -->
-                            <a href="#" class="menu-bar">
-                                <span class="line-box">
-                                    <i class="line line1"></i>
-                                    <i class="line line2"></i>
-                                    <i class="line line3"></i>
-                                </span>
-                                <span class="text">
-                                    Menu
-                                </span>
-                            </a>
-                        </li>
-                        <li>    <!-- 오른쪽 배치 -->
-                            <ul>
-                                <li><span><a href="#" class="login-btn">LOGIN</a></span></li>
-                                <li><span><i></i></span></li>
-                                <li><span><a href="#" class="join-btn">JOIN</a></span></li>
-                                <li><span><a href="#" class="confirm-btn">견적<br>문의</a></span></li>
-                                <li><span><a href="#" class="search-btn"><img src="./img/search_i.png" class="color" alt=""><img src="./img/search_i_01.png" class="white" alt=""></a></span></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+<body>
+  <div class="container">
+    <header>
+      <div class="banner">
+        <div class="lnb">
+          <a href="#none"><em>for</em> member</a>
+          <a href="#none"><em>for</em> clients</a>
+          <a href="#none"><em>for</em> inquire</a>
         </div>
+      </div>
+      <nav>
+        <div class="logo">
+          <a href="#none"><img src="img/logo4.png"></a>
+        </div>
+        <ul class="gnb">
+          <li><a href="#intro">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#ranking">RANKING</a></li>
+          <li><a href="#testimonial">TESTIMONIAL</a></li>
+          <li><a href="#blog">BLOG</a></li>
+        </ul>
+      </nav>
+      <div class="trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </header>
 
-    <nav id="nav">
-        <div class="wrap">
-            <div class="gap">
-                <div class="container">
-                    <ul>
-                        <li>
-                            <a href="#" class="main-btn" title="여행테마">여행테마</a>
-                            <div class="sub sub1">
-                                <div class="sub-wrap">
-                                    <div class="sub-gap">
-                                        <ul>
-                                            <li><a href="#" class="sub-btn">베트남 / 발리 / 태국</a></li>
-                                            <li><a href="#" class="sub-btn">몰디브 및 특수지역</a></li>
-                                            <li><a href="#" class="sub-btn">유럽</a></li>
-                                            <li><a href="#" class="sub-btn">그 외 지역</a></li>
-                                            <li><a href="#" class="sub-btn">아만 리조트</a></li>
-                                            <li><a href="#" class="sub-btn">럭셔리</a></li>
-                                            <li><a href="#" class="sub-btn">가족</a></li>
-                                            <li><a href="#" class="sub-btn">허니문</a></li>
-                                            <li><a href="#" class="sub-btn">태교여행</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li><a href="#" class="main-btn" title="프로모션">프로모션</a></li>
-                        <li><a href="#" class="main-btn" title="JTS소식">JTS소식</a></li>
-                        <li><a href="#" class="main-btn" title="여행후기">여행후기</a></li>
-                        <li>
-                            <a href="#" class="main-btn" title="여행문의">여행문의</a>
-                            <div class="sub sub2">
-                                <div class="sub-wrap">
-                                    <div class="sub-gap">
-                                        <ul>
-                                            <li><a href="#" class="sub-btn">일반여행문의</a></li>
-                                            <li><a href="#" class="sub-btn">단체여행문의</a></li>
-                                            <li><a href="#" class="sub-btn">리조트견적요청</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#" class="main-btn" title="회사소개">회사소개</a>
-                            <div class="sub sub3">
-                                <div class="sub-wrap">
-                                    <div class="sub-gap">
-                                        <ul>
-                                            <li><a href="#" class="sub-btn">About Us</a></li>
-                                            <li><a href="#" class="sub-btn">회사연혁</a></li>
-                                            <li><a href="#" class="sub-btn">오시는길</a></li>
-                                            <li><a href="#" class="sub-btn">공지사항</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <main class="intro" id="intro">
+      <div class="inner">
+        <div class="heading">
+          <h1>The World’s Best Cities</h1>
+          <p>
+            It’s not just about good weather or grea    t food and nightlife. Unlike other best-of lists, Resonance’s annual ranking also considers a city’s diversity.
+          </p>
         </div>
-    </nav>
-
-
-    <main id="main">
-        <section id="section1">
-            <div class="wrap">
-                <div class="gap">
-                    <div class="container">
-                        <div class="slide-container">
-                            <div class="slide-view">
-                                <ul class="slide-wrap clearfixed">
-                                    <li class="slide slide3"></li>
-                                    <li class="slide slide0"></li>  <!-- background:url() background-size:cover; -->
-                                    <li class="slide slide1"></li>
-                                    <li class="slide slide2"></li>
-                                    <li class="slide slide3"></li>
-                                    <li class="slide slide0"></li>
-                                </ul>
-                            </div>
-                            
-                            <span class="next-wrap"><a href="#" class="next-btn blind" title="next button">next button</a></span>
-                            <span class="prev-wrap"><a href="#" class="prev-btn blind" title="prev button">prev button</a></span>
-                            <div class="page-btn-wrap">
-                                <ul>
-                                    <li>
-                                        <div><a href="#" class="page-btn" title="page button"><i class="blind">page button</i></a></div>
-                                    </li>
-                                    <li>
-                                        <div><a href="#" class="page-btn" title="page button"><i class="blind">page button</i></a></div>
-                                    </li>
-                                    <li>
-                                        <div><a href="#" class="page-btn" title="page button"><i class="blind">page button</i></a></div>
-                                    </li>
-                                    <li>
-                                        <div><a href="#" class="page-btn" title="page button"><i class="blind">page button</i></a></div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <span class="smooth-btn-wrap"><a href="#section2" class="smooth-btn">SCROLL TO DISCOVER MORE</a></span>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="section2" class="section2345">
-            <div class="wrap">
-                <div class="gap">   <!-- margin:0; -->
-                    <div class="container">     <!-- margin:0 20px; 갤러리 여백 -->
-                        <div class="title">
-                            <h2>여행테마</h2>
-                        </div>
-                        <div class="content">
-                            <ul class="gallery clearfixed">
-                                <li>
-                                    <div class="gallery-wrap">
-                                        <div class="gallery-bg">  <!-- 46, 49, 146, 0.9 -->
-                                            <!-- <img src="./img/gallery1.jpg" class="gallery gallery1" alt=""> -->
-                                            <div class="hover-txt">
-                                                <h5>Vietnam / Bali / Thailand</h5>
-                                                <span class="plus-icon"><i class="material-icons">&#xe145;</i></span>
-                                            </div>
-                                            <a href="#" class="hover-btn blind">hover-btn</a>
-                                        </div>
-                                        <div class="caption">
-                                            <h4>Vietnam / Bali / Thailand</h4>
-                                            <h3>베트남 / 발리 / 태국</h3>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="gallery-wrap">
-                                        <div class="gallery-bg">
-                                            <!-- <img src="./img/gallery2.jpg" class="gallery gallery2" alt=""> -->
-                                            <div class="hover-txt">
-                                                <h5>Maldives & Special</h5>
-                                                <span class="plus-icon"><i class="material-icons">&#xe145;</i></span>
-                                            </div>
-                                            <a href="#" class="hover-btn blind">hover-btn</a>
-                                        </div>
-                                        <div class="caption">
-                                            <h4>Maldives & Special</h4>
-                                            <h3>몰디브 및 특수지역</h3>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="gallery-wrap">
-                                        <div class="gallery-bg">
-                                            <!-- <img src="./img/gallery3.jpg" class="gallery gallery3" alt=""> -->
-                                            <div class="hover-txt">
-                                                <h5>Europe</h5>
-                                                <span class="plus-icon"><i class="material-icons">&#xe145;</i></span>
-                                            </div>
-                                            <a href="#" class="hover-btn blind">hover-btn</a>
-                                        </div>
-                                        <div class="caption">
-                                            <h4>Europe</h4>
-                                            <h3>유럽</h3>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="gallery-wrap">
-                                        <div class="gallery-bg">
-                                            <!-- <img src="./img/gallery4.jpg" class="gallery gallery4" alt=""> -->
-                                            <div class="hover-txt">
-                                                <h5>Other Destinations</h5>
-                                                <span class="plus-icon"><i class="material-icons">&#xe145;</i></span>
-                                            </div>
-                                            <a href="#" class="hover-btn blind">hover-btn</a>
-                                        </div>
-                                        <div class="caption">
-                                            <h4>Other Destinations</h4>
-                                            <h3>그 외 지역</h3>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="gallery-wrap">
-                                        <div class="gallery-bg">
-                                            <!-- <img src="./img/gallery5.jpg" class="gallery gallery5" alt=""> -->
-                                            <div class="hover-txt">
-                                                <h5>AMAN Resorts</h5>
-                                                <span class="plus-icon"><i class="material-icons">&#xe145;</i></span>
-                                            </div>
-                                            <a href="#" class="hover-btn blind">hover-btn</a>
-                                        </div>
-                                        <div class="caption">
-                                            <h4>AMAN Resorts</h4>
-                                            <h3>아만 리조트</h3>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="gallery-wrap">
-                                        <div class="gallery-bg">
-                                            <!-- <img src="./img/gallery6.jpg" class="gallery gallery6" alt=""> -->
-                                            <div class="hover-txt">
-                                                <h5>Luxury</h5>
-                                                <span class="plus-icon"><i class="material-icons">&#xe145;</i></span>
-                                            </div>
-                                            <a href="#" class="hover-btn blind">hover-btn</a>
-                                        </div>
-                                         <div class="caption">
-                                            <h4>Luxury</h4>
-                                            <h3>럭셔리</h3>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="gallery-wrap">
-                                        <div class="gallery-bg">
-                                            <!-- <img src="./img/gallery7.jpeg" class="gallery gallery7" alt=""> -->
-                                            <div class="hover-txt">
-                                                <h5>Family</h5>
-                                                <span class="plus-icon"><i class="material-icons">&#xe145;</i></span>
-                                            </div>
-                                            <a href="#" class="hover-btn blind">hover-btn</a>
-                                        </div>
-                                        <div class="caption">
-                                            <h4>Family</h4>
-                                            <h3>가족</h3>
-                                        </dic>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="gallery-wrap">
-                                        <div class="gallery-bg">
-                                            <!-- <img src="./img/gallery8.jpeg" class="gallery gallery8" alt=""> -->
-                                            <div class="hover-txt">
-                                                <h5>Honeymoon</h5>
-                                                <span class="plus-icon"><i class="material-icons">&#xe145;</i></span>
-                                            </div>
-                                            <a href="#" class="hover-btn blind">hover-btn</a>
-                                        </div>
-                                        <div class="caption">
-                                            <h4>Honeymoon</h4>
-                                            <h3>허니문</h3>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="gallery-wrap">
-                                        <div class="gallery-bg">
-                                            <!-- <img src="./img/gallery9.jpeg" class="gallery gallery9" alt=""> -->
-                                            <div class="hover-txt">
-                                                <h5>Prenatal travel</h5>
-                                                <span class="plus-icon"><i class="material-icons">&#xe145;</i></span>
-                                            </div>
-                                            <a href="#" class="hover-btn blind">hover-btn</a>
-                                        </div>
-                                        <div class="caption">
-                                            <h4>Prenatal travel</h4>
-                                            <h3>태교여행</h3>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="section3" class="section2345">     <!-- background:#f6f6f6; -->
-            <div class="wrap">
-                <div class="gap">
-                    <div class="container">
-
-                        <div class="title">
-                            <h2>JTS 프로모션</h2>
-                        </div>
-
-                        <div class="content">
-                            <div class="slide-container">
-                                <div class="slide-view">
-                                    <ul class="slide-wrap">
-                                        <li class="slide slide1">
-                                            <div class="slide-content clearfixed">
-                                                <div class="left-wrap">
-                                                    <div class="slide-bg-image">
-                                                        
-                                                    </div>
-                                                </div>
-                                                <div class="right-wrap">
-                                                    <div class="text-gap">
-                                                        <div class="slide-text">
-                                                            <h3><a href="">다낭 포시즌스 더 남하이 프로모션</a></h3>
-                                                            <h4>Four Seasons The Nam Hai, Danang</h4>
-                                                            <p>
-                                                                베트남 다낭에 위치한 포시즌스 더남하이.
-                                                                다낭의 수많은 리조트 중 가운데 가장 높은 등급의 리조트로 
-                                                                포시즌스 계열다운 최상의 서비스와 컨디션을 약속 드립니다.
-                                                                5베드룸 까지 있어 가족여행객 분들에게 적극 추천드리는 리조트 입니다.
-
-                                                                제이슨여행사에서 포시즌스 더남하이의 특별한 프로모션과 특가 요금을 받아보세요
-
-                                                                제이슨여행사 (02-515-6897)
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="slide slide2">
-                                            <div class="slide-content clearfixed">
-                                                <div class="left-wrap">
-                                                    <div class="slide-bg-image">
-                                                        
-                                                    </div>
-                                                </div>
-                                                <div class="right-wrap">
-                                                    <div class="text-gap">
-                                                        <div class="slide-text">
-                                                            <h3><a href="">발리 아만누사빌라스 프로모션</a></h3>
-                                                            <h4>AMAN Villas Nusa Dua, Bali</h4>
-                                                            <p>
-                                                                전세계 가장 높은 등급의 호텔 브랜드인 AMAN,
-                                                                발리에 3개의 아만 Property가 있고, AMAN Villa Nusadua는 모두 프라이빗한 빌라로 되어 있어 그 중 가장 높은 금액을 자랑하지만
-                                                                Day Use와 Transit 프로모션으로 최고급의 Property를 합리적인 금액에 경험해볼 수 있습니다.
-
-                                                                제이슨여행사에서 아만 빌라스 앳 누사두아의 특별한 프로모션과 특가 요금을 받아보세요.
-
-                                                                제이슨여행사 (02-515-...
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="slide slide3">
-                                            <div class="slide-content clearfixed">
-                                                <div class="left-wrap">
-                                                    <div class="slide-bg-image">
-                                                        
-                                                    </div>
-                                                </div>
-                                                <div class="right-wrap">
-                                                    <div class="text-gap">
-                                                        <div class="slide-text">
-                                                            <h3><a href="">발리 알릴라 스미냑 프로모션</a></h3>
-                                                            <h4>Alila seminyak, Bali</h4>
-                                                            <p>
-                                                                Haytt의 상위 브랜드가 된 Alila,
-                                                                알릴라 스미냑은 스미냑 비치 바로 앞에 위치하고 있어, 아름다운 해변과 선셋을 즐길 수 있고,
-                                                                바로 옆에는 유명한 비치클럽 포테이토헤드가 좀만 걸어나가면 스미냑 시내가 있어
-                                                                휴양, 관광, 쇼핑, 유흥 모든 것을 다 즐길 수 있는 지리적인 조건을 갖고 있습니다.
-                                                                
-                                                                제이슨여행사에서 알릴라 스미냑의 특별한 프로모션과 특가 요금을 받아보세요
-                                                                
-                                                                제이슨여행사 (02-515-6897)
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>  <!-- slide-view -->
-
-                                <!-- 페이지 img -->
-                                <ul class="page-wrap">
-                                    <li><div><a href="#" class="pageBtn pageBtn1 blind">page Image</a></div></li>
-                                    <li><div><a href="#" class="pageBtn pageBtn2 blind">page Image</a></div></li>
-                                </ul>
-
-                                <!-- 좌우 화살버튼 -->
-                                <ul class="arrow-wrap">
-                                    <li><a href="#" class="prevBtn"><i class="blind">prevBtn</i></a></li>
-                                    <li><a href="#" class="nextBtn"><i class="blind">nextBtn</i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="section4" class="section2345">
-            <div class="wrap">
-                <div class="gap">   <!-- margin:0; -->
-                    <div class="container">     <!-- margin:0 20px; 갤러리 여백 -->
-
-                        <div class="title">
-                            <h2>여행후기</h2>
-                            <h3>Please write down your beautiful memories</h3>
-                        </div>
-
-                        <div class="content">
-                            <div class="slide-container">
-                                <div class="slide-view">
-                                    <ul class="slide-wrap clearfixed">
-                                        <li class="slide slide2">
-                                            <div class="slide-gap">
-                                                <div class="slide-content">
-                                                    <div class="slide-content-gap">
-                                                        <span></span>
-                                                        <h4>식스센스 닌반베이 후기 - 1일차</h4>
-                                                        <h5>2019.10.14</h5>
-                                                        <h6>by. JTS_Bonnie</h6>
-                                                    </div>
-                                                </div>
-                                                <a href="#" class="event-btn">
-                                                    <i></i>
-                                                    <i></i>
-                                                    <i></i>
-                                                    <i></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li class="slide slide3">
-                                            <div class="slide-gap">
-                                                <div class="slide-content">
-                                                    <div class="slide-content-gap">
-                                                        <span></span>
-                                                        <h4>식스센스 야오노이 객실 후기</h4>
-                                                        <h5>2019.10.14</h5>
-                                                        <h6>by. JTS_Nancy</h6>
-                                                    </div>
-                                                </div>
-                                                <a href="#" class="event-btn">
-                                                    <i></i>
-                                                    <i></i>
-                                                    <i></i>
-                                                    <i></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li class="slide slide4">
-                                            <div class="slide-gap">
-                                                <div class="slide-content">
-                                                    <div class="slide-content-gap">
-                                                        <span></span>
-                                                        <h4>식스센스 닌반베이 후기 - 1일차</h4>
-                                                        <h5>2019.10.14</h5>
-                                                        <h6>by. JTS_Bonnie</h6>
-                                                    </div>
-                                                </div>
-                                                <a href="#" class="event-btn">
-                                                    <i></i>
-                                                    <i></i>
-                                                    <i></i>
-                                                    <i></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li class="slide slide1">
-                                            <div class="slide-gap">
-                                                <div class="slide-content">
-                                                    <div class="slide-content-gap">
-                                                        <span></span>    <!-- 216px -->
-                                                        <h4>푸꾸옥 여행 후기</h4>   <!-- 14px #333 -->
-                                                        <h5>2020.02.11</h5>     <!-- 12px #aa8e9f -->
-                                                        <h6>by. 장윤*</h6>      <!-- 12px #999 -->
-                                                    </div>
-                                                </div>
-                                                <a href="#" class="event-btn">
-                                                    <i></i>
-                                                    <i></i>
-                                                    <i></i>
-                                                    <i></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li class="slide slide2">
-                                            <div class="slide-gap">
-                                                <div class="slide-content">
-                                                    <div class="slide-content-gap">
-                                                        <span></span>
-                                                        <h4>식스센스 닌반베이 후기 - 1일차</h4>
-                                                        <h5>2019.10.14</h5>
-                                                        <h6>by. JTS_Bonnie</h6>
-                                                    </div>
-                                                </div>
-                                                <a href="#" class="event-btn">
-                                                    <i></i>
-                                                    <i></i>
-                                                    <i></i>
-                                                    <i></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li class="slide slide3">
-                                            <div class="slide-gap">
-                                                <div class="slide-content">
-                                                    <div class="slide-content-gap">
-                                                        <span></span>
-                                                        <h4>식스센스 야오노이 객실 후기</h4>
-                                                        <h5>2019.10.14</h5>
-                                                        <h6>by. JTS_Nancy</h6>
-                                                    </div>
-                                                </div>
-                                                <a href="#" class="event-btn">
-                                                    <i></i>
-                                                    <i></i>
-                                                    <i></i>
-                                                    <i></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li class="slide slide4">
-                                            <div class="slide-gap">
-                                                <div class="slide-content">
-                                                    <div class="slide-content-gap">
-                                                        <span></span>
-                                                        <h4>식스센스 닌반베이 후기 - 1일차</h4>
-                                                        <h5>2019.10.14</h5>
-                                                        <h6>by. JTS_Bonnie</h6>
-                                                    </div>
-                                                </div>
-                                                <a href="#" class="event-btn">
-                                                    <i></i>
-                                                    <i></i>
-                                                    <i></i>
-                                                    <i></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li class="slide slide1">
-                                            <div class="slide-gap">
-                                                <div class="slide-content">
-                                                    <div class="slide-content-gap">
-                                                        <span></span>
-                                                        <h4>푸꾸옥 여행 후기</h4>
-                                                        <h5>2020.02.11</h5>
-                                                        <h6>by. 장윤*</h6>
-                                                    </div>
-                                                </div>
-                                                <a href="#" class="event-btn">
-                                                    <i></i>
-                                                    <i></i>
-                                                    <i></i>
-                                                    <i></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li class="slide slide2">
-                                            <div class="slide-gap">
-                                                <div class="slide-content">
-                                                    <div class="slide-content-gap">
-                                                        <span></span>
-                                                        <h4>식스센스 닌반베이 후기 - 1일차</h4>
-                                                        <h5>2019.10.14</h5>
-                                                        <h6>by. JTS_Bonnie</h6>
-                                                    </div>
-                                                </div>
-                                                <a href="#" class="event-btn">
-                                                    <i></i>
-                                                    <i></i>
-                                                    <i></i>
-                                                    <i></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li class="slide slide3">
-                                            <div class="slide-gap">
-                                                <div class="slide-content">
-                                                    <div class="slide-content-gap">
-                                                        <span></span>
-                                                        <h4>식스센스 야오노이 객실 후기</h4>
-                                                        <h5>2019.10.14</h5>
-                                                        <h6>by. JTS_Nancy</h6>
-                                                    </div>
-                                                </div>
-                                                <a href="#" class="event-btn">
-                                                    <i></i>
-                                                    <i></i>
-                                                    <i></i>
-                                                    <i></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>  <!-- slide-view -->
-                                <div class="pageBtn-wrap">
-                                    <ul>
-                                        <li><a href="#" class="pageBtn pageBtn0 addPage blind">pageBtn</a></li>
-                                        <li><a href="#" class="pageBtn pageBtn1 blind">pageBtn</a></li>
-                                        <li><a href="#" class="pageBtn pageBtn2 blind">pageBtn</a></li>
-                                        <li><a href="#" class="pageBtn pageBtn3 blind">pageBtn</a></li>
-                                    </ul>
-                                </div>
-                            </div>  <!-- slide-container -->
-                        </div>  <!-- content -->
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="section5" class="section2345">
-            <div class="wrap">
-                <div class="gap">
-                    <div class="container">
-                        <ul>
-                            <li><a href="#"><img src="./img/banner_0.png" alt=""></a></li><li><a href="#"><img src="./img/banner_1.png" alt=""></a></li><li><a href="#"><img src="./img/banner_2.png" alt=""></a></li><li><a href="#"><img src="./img/banner_3.png" alt=""></a></li><li><a href="#"><img src="./img/banner_4.png" alt=""></a></li><li><a href="#"><img src="./img/banner_5.png" alt=""></a></li><li><a href="#"><img src="./img/banner_6.png" alt=""></a></li><li><a href="#"><img src="./img/banner_7.png" alt=""></a></li><li><a href="#"><img src="./img/banner_8.png" alt=""></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+      </div>
     </main>
 
-    <footer id="footer">        <!-- background:#303030; -->
-        <div class="wrap">
-            <div class="gap">
-                <div class="container">
-                    <div class="content">
-                        <div class="content-gap clearfixed">
-                            <div class="left-wrap">
-                                <h1><img src="./img/f_logo.png" alt="logo"></h1>
-                            </div>
-                            <div class="right-wrap">
-                                <div class="address-row1 clearfixed">
-                                    <div class="address-row1-left">
-                                        <span><a href="#">About Us</a></span>
-                                        <span><a href="#">Privacy Policy</a></span>
-                                        <span><a href="#">Contact Us 02-515-6897</a></span>
-                                    </div>
-                                    <div class="address-row1-right">
-                                        <span><a href="#"><img src="./img/naver_logo_ori.png" alt=""></a></span>
-                                        <span><a href="#"><img src="./img/insta_logo.png" alt=""></a></span>
-                                        <span><a href="#"><img src="./img/kakao_logo.png" alt=""></a></span>
-                                    </div>
-                                </div>
-                                <div class="address-row2">
-                                    <address>
-                                        (주)제이슨여행사 &nbsp; 대표자 : 서현석 &nbsp; 사엄자등록번호 : 211-86-32052 &nbsp; 주소 : 서울특별시 강남구 학동로 520, 5층 (삼성동, 삼예빌딩)
-                                        <span>&copy; Copyright by JTS. All rights reserved.</span>
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="about" id="about">
+      <div class="inner">
+        <div class="about-content">
+          <div class="desc">
+            <h2>About Best Cities in the world</h2>
+            <p>
+              Factors including its highly rated nightlife landed Madrid, Spain, 12th on this list of world’s best cities. It’s not just about good weather or great food and nightlife. Unlike other best-of lists, Resonance’s annual ranking also considers a city’s diversity and, yes, the number of Instagram hashtags shared online to give a comprehensive view of what it’s like to visit and live in these places.<br><br>
+              To figure out where you should travel to next, there are plenty of lists out there ranking the world’s best cities. Some
+              use reader polls to determine which place lands at the top, while others base rankings on data like its livability or
+              how easy it is to bike there.
+            </p>
+            <a href="#none">Visit the place information</a>
+          </div>
+          <div class="photo">
+            <img src="img/about-img-01.jpg">
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="ranking" id="ranking">
+      <div class="inner">
+        <div class="ranking-content">
+          <h2>The World’s 25 Best Cities of 2020</h2>
+          <div class="items">
+            <div class="item">
+              <div class="up-image">
+                <img src="img/best-city-01.jpg">
+              </div>
+              <div class="down-desc">
+                <span class="badge must-go">Must go</span>
+                <h3>London, England</h3>
+                <p>
+                  London’s main sights might date back millennia, but the capital’s shops, bars, hotels, and restaurants emerge and evolve on an almost weekly basis.
+                </p>
+                <a href="#none" class="btn-more">Explore <img src="img/icon-arrow.png"></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="up-image">
+                <img src="img/best-city-02.jpg">
+              </div>
+              <div class="down-desc">
+                <span class="badge good-to-go">Good to go</span>
+                <h3>New York City, United States</h3>
+                <p>
+                  New York’s performing arts scene—both on Broadway and off—is beloved by visitors and locals alike, so it’s no surprise that the Big Apple took the number one spot.
+                </p>
+                <a href="#none" class="btn-more">Explore <img src="img/icon-arrow.png"></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="up-image">
+                <img src="img/best-city-03.jpg">
+              </div>
+              <div class="down-desc">
+                <span class="badge good-to-go">Good to go</span>
+                <h3>Paris, France</h3>
+                <p>
+                  The Notre Dame fire was a devastating reminder of how well-loved Paris is by travelers worldwide, and as the capital gears up for the 2024 Olympics
+                </p>
+                <a href="#none" class="btn-more">Explore <img src="img/icon-arrow.png"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial" id="testimonial">
+      <div class="inner">
+        <div class="testimonial-content">
+          <h2>what <b>our customers</b> are saying</h2>
+          <hr>
+          <div class="slide-wrap">
+            <div class="slider">
+              <div class="slider-item">
+                <p class="client">
+                  <img src="img/client-01.jpg">
+                  <span><b>Amelia</b>Washington, US</span>
+                </p>
+                <p class="slide-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus perspiciatis odit asperiores nihil distinctio laborum animi blanditiis vero, architecto aliquid beatae, dignissimos porro, tempore laudantium est et libero consequuntur culpa quaerat minus ipsam exercitationem quia quis praesentium. Veritatis maxime fugiat consectetur? Eligendi aliquid laboriosam placeat molestiae, ab quis accusantium ipsum?
+                </p>
+              </div>
+              <div class="slider-item">
+                <p class="client">
+                  <img src="img/client-02.jpg">
+                  <span><b>Kate Whitney</b>Los Angeles, US</span>
+                </p>
+                <p class="slide-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, cupiditate. Dolorem, cumque fugiat temporibus necessitatibus tempora saepe fugit laborum recusandae numquam obcaecati veniam sunt officiis non atque ea dicta aspernatur voluptatem error quidem. Quidem, quibusdam optio? Temporibus aut maxime sed, eos a adipisci nulla fugit cupiditate natus voluptates totam dolorum!
+                </p>
+              </div>
+              <div class="slider-item">
+                <p class="client">
+                  <img src="img/client-03.jpg">
+                  <span><b>Kelly Muvils</b>New York, US</span>
+                </p>
+                <p class="slide-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit a consequuntur voluptate ratione repellat minima, at neque eaque, natus saepe esse et consequatur quos dolor sed vero ad distinctio nam molestias alias minus sint. Ab repellendus eligendi sunt voluptatum possimus asperiores doloribus, deserunt illo recusandae minus vitae. Rem, eos officia!
+                </p>
+              </div>
+              <div class="slider-item">
+                <p class="client">
+                  <img src="img/client-04.jpg">
+                  <span><b>Oliver</b>Califonia, US</span>
+                </p>
+                <p class="slide-txt">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos placeat eveniet, deserunt delectus eaque accusamus esse veniam cumque dicta repellat id fugit sit sed reprehenderit nesciunt? Eligendi, saepe. Beatae pariatur, sunt obcaecati officiis dolore rerum doloribus perspiciatis ipsa nulla amet sit, aliquid non doloremque, exercitationem consectetur repellat inventore reiciendis eaque.
+                </p>
+              </div>
+              <div class="slider-item">
+                <p class="client">
+                  <img src="img/client-05.jpg">
+                  <span><b>Sophia</b>London, UK</span>
+                </p>
+                <p class="slide-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa labore facere voluptatibus eos obcaecati molestiae laboriosam sed eligendi corrupti blanditiis, expedita iusto cumque incidunt explicabo! Exercitationem facere similique modi nam consequuntur mollitia expedita ut blanditiis ea asperiores repellendus tenetur perferendis, ipsam earum veniam, sed itaque voluptas quas, voluptate molestiae excepturi!
+                </p>
+              </div>
+              <div class="slider-item">
+                <p class="client">
+                  <img src="img/client-06.jpg">
+                  <span><b>Charlotte</b>Washington, US</span>
+                </p>
+                <p class="slide-txt">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus ab veritatis voluptates voluptatem itaque odio, illum provident dolorum sequi ratione neque, quam nam! Dolorum, itaque. Mollitia nihil architecto, accusamus quibusdam autem vitae quam dignissimos magnam id molestias sed similique quae itaque, commodi quod corporis reprehenderit saepe corrupti ut? Quaerat, harum.
+                </p>
+              </div>
+            </div>
+            <ul class="slide-controls">
+              <li data-index="0" class="active"></li>
+              <li data-index="1"></li>
+              <li data-index="2"></li>
+              <li data-index="3"></li>
+              <li data-index="4"></li>
+              <li data-index="5"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="callaction">
+      <div class="callaction-heading">
+        <h2>The Most Simple & <b>Powerful Way</b><br>to book <b>your trip</b></h2>
+        <a href="#none">GET EARLY ACCESS</a>
+      </div>
+    </section>
+
+    <section class="blog" id="blog">
+      <div class="inner">
+        <div class="blog-content">
+          <div class="blog-header">
+            <h6>feature article</h6>
+            <h2>Can Americans Visit Mexico Right Now?</h2>
+            <p>
+              Technically, there’s a ban on nonessential travel across the border through September 21. Then how are people on vacation in Cabo and Cancun right now?
+            </p>
+            <a href="#none" class="btn-more">Read More <img src="img/icon-arrow.png"></a>
+          </div>
+          <hr class="divider">
+          <div class="post-content">
+            <div class="recent-post-item">
+              <h6>most recent</h6>
+              <div class="post-item">
+                <div class="post-image">
+                  <img src="img/most-recent-01.jpg">
+                </div>
+                <div class="post-desc">
+                  <h3>world ocean travel</h3>
+                  <p>
+                    The ocean provides a vast seascape for travel. Beyond the cruise ship there are other, more intimate, more environmentally sustainable ways to engage with the ocean.
+                    <span>July 12, 2020</span>
+                  </p>
+                </div>
+              </div>
+              <hr class="divider">
+              <div class="post-item">
+                <div class="post-image">
+                  <img src="img/most-recent-02.jpg">
+                </div>
+                <div class="post-desc">
+                  <h3>come to South Korea</h3>
+                  <p>
+                    While only 60 years ago South Korea was considered a developing country, it’s now one of Asia’s economic and cultural leaders. Super-chic Seoul combines modernism with ancient history
+                    <span>August 22, 2020</span>
+                  </p>
+                </div>
+              </div>
+              <hr class="divider">
+              <div class="post-item">
+                <div class="post-image">
+                  <img src="img/most-recent-03.jpg">
+                </div>
+                <div class="post-desc">
+                  <h3>Vietnam & Cambodia</h3>
+                  <p>
+                    Start in Hanoi and end in Bangkok! With the Discovery tour Best of Vietnam & Cambodia, you have a 18 days tour package taking you through Hanoi, Vietnam and 10 other destinations. 
+                    <span>June 30, 2020</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <hr class="divider-shared">
+            <div class="shared-post-item">
+              <h6>most shared</h6>
+              <div class="post-item">
+                <div class="post-image">
+                  <img src="img/most-shared-01.jpg">
+                </div>
+                <div class="post-desc">
+                  <h3>Events in NYC</h3>
+                  <p>
+                    New York City is the place to see and do everything
+                    <span>May 02, 2020</span>
+                  </p>
+                </div>
+              </div>
+              <hr class="divider-shared">
+              <div class="post-item">
+                <div class="post-image">
+                  <img src="img/most-shared-02.jpg">
+                </div>
+                <div class="post-desc">
+                  <h3>FESTIVALS</h3>
+                  <p>
+                    Experiencing a festival together with a group of like-minded 
+                    <span>Jan 18, 2020</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="festival">
+      <div class="festival-heading">
+        <h3><span>SEE ALL FESTIVALS</spa> for the Best Trip Place</h3>
+        <div class="btns">
+          <a href="#">Maxico Festivals</a>
+          <a href="#">Barcelona Festivals</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="inner">
+        <div class="footer-content">
+          <ul class="community">
+            <li>Community</li>
+            <li><a href="#none">Subscribe</a></li>
+            <li><a href="#none">Give A Gift</a></li>
+            <li><a href="#none">Customer Service FAQ</a></li>
+            <li><a href="#none">Access Your Subscription</a></li>
+          </ul>
+          <ul class="network">
+            <li>Network</li>
+            <li><a href="#none">Privacy Policy</a></li>
+            <li><a href="#none">Terms Of Service</a></li>
+            <li><a href="#none">Advertise</a></li>
+            <li><a href="#none">Jobs</a></li>
+          </ul>
+          <ul class="help">
+            <li>Help Preserve This Project</li>
+            <li>We may earn a commission if you purchase an item<br>
+              featured on our site.</li>
+            <li>Copyright © 2020 CodingWorks. All rights reserved.</li>
+          </ul>
+        </div>
+      </div>
     </footer>
+  </div>
 
-</div>
+  <a href="#" class="go-to-top"><i class="fa fa-angle-up"></i></a>
 
-    <script src="./js/jason.js"></script>
+  <!-- .inner -- width 1300px margin auto -->
 
+  <script src="js/main.js"></script>
 </body>
 </html>
